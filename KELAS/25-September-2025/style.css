@@ -1,0 +1,30 @@
+       #rumah {
+            width: 80%;
+            margin: auto;
+        }
+        #Kompetensi {
+            color: navy;
+            font-style: italic;
+            font-size: large;
+        }
+        .Pendidikan{
+            height: 500px;
+        }
+        .huruf{
+            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+            font-size: xx-large;
+            font-weight: 500;
+        }
+        .jarak{
+            margin-top: 30px;
+            margin-bottom: 50px;
+        }
+        .artikel{
+            margin-top: 30px;
+        }
+
+        .warna{
+            background-color: yellow;
+        }
+
+        
