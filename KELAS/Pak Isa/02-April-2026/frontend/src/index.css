@@ -1,0 +1,86 @@
+/* Custom Font - Google Fonts (Outfit) */
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600;800&display=swap');
+
+@import "tailwindcss";
+
+@theme {
+  --font-sans: 'Outfit', sans-serif;
+  --color-brand-pink: #fce4ec;
+  --color-brand-blue: #e3f2fd;
+  --color-brand-purple: #f3e5f5;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: var(--font-sans);
+  /* Pastel Gradient Background */
+  background: linear-gradient(135deg, var(--color-brand-pink) 0%, var(--color-brand-blue) 50%, var(--color-brand-purple) 100%);
+  background-attachment: fixed;
+  overflow-x: hidden;
+  margin: 0;
+}
+
+/* ANTI-GRAVITY KEYFRAMES */
+@keyframes float {
+  0% {
+    transform: translateY(0px);
+  }
+
+  50% {
+    transform: translateY(-20px);
+  }
+
+  100% {
+    transform: translateY(0px);
+  }
+}
+
+@keyframes float-slow {
+  0% {
+    transform: translateY(0px) rotate(0deg);
+  }
+
+  50% {
+    transform: translateY(-15px) rotate(2deg);
+  }
+
+  100% {
+    transform: translateY(0px) rotate(0deg);
+  }
+}
+
+@keyframes pulse-glow {
+
+  0%,
+  100% {
+    box-shadow: 0 0 20px 5px rgba(233, 150, 255, 0.4);
+  }
+
+  50% {
+    box-shadow: 0 0 40px 15px rgba(150, 200, 255, 0.6);
+  }
+}
+
+/* Utility Classes */
+.animate-float {
+  animation: float 4s ease-in-out infinite;
+}
+
+.animate-float-slow {
+  animation: float-slow 6s ease-in-out infinite;
+}
+
+.glow-effect {
+  animation: pulse-glow 3s infinite alternate;
+}
+
+/* Glassmorphism */
+.glass {
+  background: rgba(255, 255, 255, 0.25);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+  border: 1px solid rgba(255, 255, 255, 0.4);
+}
